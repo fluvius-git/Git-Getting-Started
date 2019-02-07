@@ -294,9 +294,10 @@ Check your homework
 #### 3.1.3 Push your Repo to GitHub
 
 ```
-- git push --force origin master
+- git push -u origin master
 ```
 
+Alternatively, you can use 'git push --force origin master'
 We need to use '--force' because the remote repo, uptil now, has now clue of our existance and are not in sync.
 
 
@@ -357,7 +358,13 @@ Replace my work in progress and apply the appropriate 'backup'
 - git stash apply stash@{1}
 ```
 
-## 5 Merging
+## 5 Merge & Rebase
+
+In git there are 2 main options to integrate changes from 2 branches:
+- Merge
+- Rebase
+
+### Merge:
 
 **There are 2 merge possibilities:**
 
@@ -374,3 +381,17 @@ Replace my work in progress and apply the appropriate 'backup'
 - a new commit is created.
 
 [See detailed workflow example](doc/git.pdf)
+
+### Rebase:
+
+As the word indicates, it 'moves' the base of a branch foreward.
+Go to the branch you want to rebase, the apply the command.
+
+```
+- git checkout dev
+- git rebase master
+```
+
+<img src="images/git_rebase_vs_merge.png" width = "600px">
+
+**Warning:** Do NOT rebase commits that exists outside your local repository.
