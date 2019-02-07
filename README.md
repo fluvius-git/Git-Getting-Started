@@ -6,9 +6,9 @@ TOC:
 - 2 Basic Git Commands
 - 3 Remote Repository
 - 4 Branching
-- 5 Merging
+- 5 Merge and Rebase
 
-<img src="images/git.png" width="800px">
+<img src="images/git_lifecycle.png" width="800px">
 
 **References:**
 
@@ -364,25 +364,25 @@ In git there are 2 main options to integrate changes from 2 branches:
 - Merge
 - Rebase
 
-### Merge:
+### 5.1 Merge:
 
 **There are 2 merge possibilities:**
 
 <img src="images/git_FF_vs_3way_merge.png" width = "600px">
 
-### 5.1 Fast Foreward merge
+### 5.1.1 Fast Foreward merge
 
 - only when there is a LINEAR relation between the 2 commits.
 - no new commit is created.
 
-### 5.2 3-way merge
+### 5.1.2 3-way merge
 
 - when there is NO LINEAR relation between the 2 commits.
 - a new commit is created.
 
 [See detailed workflow example](doc/git.pdf)
 
-### Rebase:
+### 5.2 Rebase:
 
 As the word indicates, it 'moves' the base of a branch foreward.
 Go to the branch you want to rebase, the apply the command.
