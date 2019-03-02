@@ -13,8 +13,8 @@ TOC:
 **References:**
 
 - must read: extensive but very clear: https://git-scm.com/book/en/v2
-- Good quick intro: Youtube 'freeCodeCamp': https://www.youtube.com/watch?v=vR-y_2zWrIE&list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF
-- Git workshop from cs50 so ...Top!: https://www.youtube.com/watch?v=MJUJ4wbFm_A
+- [Good quick intro: Youtube 'freeCodeCamp':](https://www.youtube.com/watch?v=vR-y_2zWrIE&list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF)
+- [Git workshop from cs50 so ...Top!: ](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
 
 # 1 Intro
 
