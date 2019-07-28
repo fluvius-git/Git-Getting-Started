@@ -7,6 +7,7 @@ TOC:
 - 3 Remote Repository
 - 4 Branching
 - 5 Merge and Rebase
+- 6 How to ...?
 
 <img src="images/git_lifecycle.png" width="800px">
 
@@ -409,3 +410,52 @@ As the word indicates, it 'moves' the base of a branch foreward. Go to the branc
 <img src="images/git_rebase_vs_merge.png" width = "600px">
 
 **Warning:** Do NOT rebase commits that exists outside your local repository.
+
+## 6 How to ...?
+
+### 6.1 How to delete your latest commit on GitHub ?
+
+Suppose you do like me and accidentally commit to the wrong repo and want to undo this.
+
+**First** you have to delete it locally
+
+```
+//Check your commit history
+git log --pretty=oneline --abbrev-commit
+
+//Delete latest commit
+git reset --hard HEAD~1
+
+// Check if latest is deleted
+git log --pretty=oneline --abbrev-commit
+```
+
+**Second** Delete the latest commit on your remote repo (GitHub)
+
+```
+//Check your commit history in the GitHub UI
+
+//Delete latest commit on GitHub
+git push origin +master
+
+// Check your commit history in the GitHub UI
+```
+
+### 6.2 How to change remote repo on GitHub ?
+
+If you start working on a different project and do not want to push your commits to the wrong repository (as I did in 6.1 :-), you have to change your remote repo.
+
+**How** to change your remote repo
+
+```
+//Verify the actual remote repo
+git remote -v
+
+//Change remote repo
+git remote set-url origin https://github.com/tribp/Getting-Started-Vue.git
+
+// Verify if ok
+git remote -v
+
+//PS: next time you 'push', you will be asked for credentials.
+```
