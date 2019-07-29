@@ -13,7 +13,7 @@ TOC:
 
 **References:**
 
-- must read: extensive but very clear: https://git-scm.com/book/en/v2
+- [must read: extensive but very clear:](https://git-scm.com/book/en/v2)
 - [Good quick intro: Youtube 'freeCodeCamp':](https://www.youtube.com/watch?v=vR-y_2zWrIE&list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF)
 - [Git workshop from cs50 so ...Top!: ](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
 
@@ -311,7 +311,7 @@ Check your homework
 - git push -u origin master
 ```
 
-Alternatively, you can use **'git push --force origin master'** We need to use **'--force'** because the remote repo, uptil now, has now clue of our existance and are not in sync.
+Alternatively, you can use **'git push --force origin master'** We need to use **'--force'** because the remote repo, uptil now, has no clue of our existance and are not in sync.
 
 Viewing the tree
 
@@ -458,4 +458,11 @@ git remote set-url origin https://github.com/tribp/Getting-Started-Vue.git
 git remote -v
 
 //PS: next time you 'push', you will be asked for credentials.
+```
+
+### 6.3 Ignore files or directories ?
+
+```
+cat .gitignore
+/Code-examples/Section_6_Real_Development_Workflow
 ```
